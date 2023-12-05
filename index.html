@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon"type="image/png" href="1.jpg">
+    <style>
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        justify-self: center;
+        align-items: center;
+      }
+      .nm {
+        flex: 1 0 130px;
+      }
+      .eml {
+        flex: 1 0 130px;
+      }
+      .bt {
+        flex: 1 0 40px;
+      }
+
+      .flxcnt{
+        display: flex;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+    .flex-item{
+        flex-grow: 1;
+        border: 1px solid red;
+        flex-basis: 300px;
+      }
+
+
+      .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .container > div {
+        height: 100px;
+        flex: max(400px,(100% - 20px)/3);
+        background:#ff4155 ;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <input type="text" class="name" placeholder="text" />
+      <input type="text" placeholder="email" />
+      <button>Button</button>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <div class="flex">
+      <input type="text" name="" placeholder="text" class="nm" id="" />
+      <input type="text" name="" class="eml" id="" />
+      <button class="bt">b</button>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <div class="flxcnt">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+    </div>
+
+
+    <br /><br /><br /><br />
+
+
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+  </body>
+</html>
